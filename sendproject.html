@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spark</title>
+        <link rel="icon" href="./images/logo.png">
+        <link rel="stylesheet" href="./style/bootstrap.min.css">
+        <link rel="stylesheet" href="./style/home.css">
+        <link rel="stylesheet" href="./style/send.css">
+    </head>
+    <body>
+        <!-- navbar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid justify-content-center">
+                  <a class="navbar-brand" href="./index.html">
+                    <div class="d-flex justify-content-lg-start justify-content-center align-items-center" id="navbar-brand">
+                      <img src="./images/logo.png" alt="logo" class="img-fluid">
+                      <h3>Spark</h3>
+                    </div>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto px-2">
+                        <a class="nav-link mx-2" aria-current="page" href="./index.html"> Home</a>
+                        <a class="nav-link mx-2" href="./about.html">About spark</a>
+                        <a class="nav-link Active mx-2" href="./sendproject.html">Send projects</a>
+                        <a class="nav-link mx-2" href="./contact.html">Contact</a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+
+        <!-- main -->
+            <main>
+                <div class="hero container-fluid">
+                  <div class="row">
+
+                    <div class="col-*">
+                      <h1>Upload <span>your project</span></h1>
+                      <p>Share your idea with us and we will help you spread the word. fill out the form below to begin your spark journey</p>
+                      <div class="d-lg-flex d-grid justify-content-center">
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+            </main>
+
+        <!-- setion-2 -->
+            <section class="steps">
+                <span id="st-1">
+                    <div class="mx-2" id="color-1"></div>
+                    step-1 information
+                </span>
+                <hr id="hr-1">
+                <span id="st-2">
+                    <div class="mx-2" id="color-2"></div>
+                    step-2 project
+                </span>
+                <hr id="hr-2">
+                <span id="st-3">
+                    <div class="mx-2" id="color-3"></div>
+                    step-3 contact
+                </span>
+            </section>
+
+        <!-- secton-3 -->
+            <section id="section-3">
+              <div class="form">
+
+                <form action="https://formspree.io/f/xwpnoqlj" method="post">
+  
+                  <div id="f-1">
+                    <h2>Basic information</h2>
+                    <hr>
+                    <div class="d-grid">
+                      <label for="name-project">Name of project <sub>*</sub></label>
+                      <input type="text" id="name-project" class="form-control" name="Name of project:" required>
+
+                      <div class="d-flex justify-content-between align-content-center mt-4 mb-4">
+                        <label for="project-category">Project category<sub>*</sub></label>
+                        <select name="project-category"  id="option" class="form-select w-25 mt-3 text-dark" required>
+                          <option selected hidden>Select category</option>
+                          <optgroup label="Options">
+                              <option value="Technology and software">Technology and software</option>
+                              <option value="Electronic commerce">Electronic commerce</option>
+                              <option value="Education and training">Education and training</option>
+                              <option value="Health and medicine">Health and medicine</option>
+                              <option value="Environment and sustainability">Environment and sustainability</option>
+                              <option value="Arts and creativity">Arts and creativity</option>
+                              <option value="Financial services">Financial services</option>
+                              <option value="Tourism and travel">Tourism and travel</option>
+                              <option value="Food and drinks">Food and drinks</option>
+                              <option value="Other">Other</option>
+                          </optgroup>
+                        </select>
+                      </div>
+  
+                      <label for="describe project">Describe project<sub>*</sub></label>
+                      <textarea name="describe project:" id="describe project" class="form-control" cols="30" rows="6" placeholder="Describe your project with more details...." required></textarea>
+
+                      <label for="Target group">Target group<sub>*</sub></label>
+                      <input type="text" id="Target group" class="form-control" name="Target group:" placeholder="Who is the beneficiaries of your project?" required>
+                    </div>
+                  </div>
+  
+                  <div id="f-2">
+                    <h2>Project details</h2>
+                    <hr>
+                    <div class="d-grid">
+                      <label for="project files">Project  explanatory files<sub>*</sub></label>
+                      <div class="upload files">
+                        <img src="./images/upload.svg" alt="image">
+                        <input type="url" name="url of project files(pdf,word,pptx):" placeholder="Enter URL of project files (pdf,word,pptx)" class="mx-auto form-control" id="project files" required>
+                        <div class="mt-4">
+                          <code>Note:</code>
+                          <span>Please upload the project files to your drive file, then enter the drive link and make sure it is a valid link and also make sure that we can edit.</span>
+                        </div>
+                      </div>
+  
+                      <label for="prototype" class="mt-5">Image of the first model (prototype)<sub>*</sub></label>
+                      <div class="prototype">
+                        <img src="./images/image-solid-full.svg" alt="image">
+                        <input type="url" name="prototype:" placeholder="Enter URL of project image (prototype)" class="mx-auto form-control"  id="prototype" required>
+                        <div class="mt-4">
+                          <code>Note:</code>
+                          <span>Please upload the project prototype images to your drive file, then enter the drive link and make sure it is a valid link and also make sure that we can edit.</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  
+                  <div id="f-3">
+                    <h2>Cotact</h2>
+                    <hr>
+                    <div class="d-grid">
+                      <label for="Full name">Full name<sub>*</sub></label>
+                      <input type="text" id="Full name" class="form-control" name="Full name:" placeholder="Enter your full name..." required>
+
+                      <label for="email">Email<sub>*</sub></label>
+                      <input type="email" id="email" class="form-control" name="Email:" placeholder="Enter your email..." required>
+
+                      <label for="phone">Phone number<sub>*</sub></label>
+                      <input type="text" id="phone" class="form-control" name="Phone number" placeholder="Enter your phone number..." required>
+                    </div>
+
+                    <div class="send">
+                      <h5>What happens after sending?</h5>
+                      <ul>
+                        <li>We will review your project within 24-72 hours</li>
+                        <li>One of our experts will contact to discuss the details.</li>
+                        <li>We will develop a customized business plan for your project.</li>
+                        <li>We will start the journey of turning your ideas into reality.</li>
+                      </ul>
+                    </div>
+
+                    <button class="mx-auto">Submit</button>
+                  </div>
+  
+                </form>
+                <span class="d-flex justify-content-between mt-4">
+                  <button id="later" onclick="later()">later</button>
+                  <button id="continue" onclick="Continue()">continue</button>
+                </span>
+                <div class="mt-3">
+                  <span>
+                    <code>note:</code><sub class="fs-5">*</sub> refers to Required fields that form can not submit with out it.
+                  </span>
+                </div>
+              </div>
+            </section>
+
+        <!-- footer -->
+            <footer>
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 d-grid justify-content-lg-start justify-content-center align-items-center">
+                    <h3>Important resources :</h3>
+                    <div class="d-grid resources">
+                      <a href="./index.html">Home</a>
+                      <a href="./about.html">About spark</a>
+                      <a href="./sendproject.html">Send projects</a>
+                      <a href="./contact.html">Contact</a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 d-grid justify-content-center mt-3">
+                    <h3>Our services :</h3>
+                    <div class="services-footer">
+                      <span>Project development</span>
+                      <span>|</span>
+                      <span>Technical consulting</span>
+                      <br>
+                      <span>Feasibility studies</span>
+                      <span>|</span>
+                      <span>Project management</span>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-12 d-grid justify-content-center mt-3 mb-2">
+                    <h3>Contact us :</h3>
+                    <div class="d-flex  align-items-end mx-3">
+                      <span>Email-support</span>
+                      <span class="mx-1">|</span>
+                      <a href="mailto:SparkTeam@gmail.com" class="text-decoration-none">SparkTeam@gmail.com</a>
+                    </div>
+                    <div class="d-flex  align-items-end mx-3 mt-3">
+                      <span>Phone-support</span>
+                      <span class="mx-1">|</span>
+                      <span>+20 01282046239</span>
+                    </div>
+                    <div class="d-flex align-items-end mx-3">
+                      <span>Discord community</span>
+                      <span class="mx-1">|</span>
+                      <a href="https://discord.gg/e7EZtnt4MX" class="text-decoration-none">Join</a>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="text-center mt-5">Copy Right © 2025 by Spark. ALL rights reserved</p>
+
+            </footer>
+
+        <script src="./script/bootstrap.bundle.min.js"></script>
+        <script src="./script/send.js"></script>
+    </body>
+</html>

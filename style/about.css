@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* section-1 */
+.section-2 .vission{
+    padding: 3%;
+    margin-bottom: 5%;
+}
+
+.section-2 .vission .v_1,.v_2 {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5%;
+    background: #e6e3e310;
+    border: 2px   dashed rgba(243, 180, 113, 0.567);
+}
+.section-2 .vission .v_1:hover ,.v_2:hover{
+    border: 3px   dashed rgba(230, 155, 76, 0.567);
+}
+
+.section-2 .vission .v_1 p{
+    margin-top: 25px;
+}
+
+.section-2 img{
+    width: 20%;
+}
+/* section-3 */
+.section-3{
+    padding: 4%;
+    background: #d2d2d22f;
+}
+
+.section-3 .col-lg-4{
+    display: grid;
+    justify-items: center;
+    margin-top: 20px;
+    padding: 5%;
+    background: #27272775;
+    backdrop-filter: opacity(0.8);
+    box-shadow: 0px 4px 6px rgba(26, 26, 26, 0.43);
+    border-radius: 15px;
+}
+
+.section-3 .col-lg-4 h3{
+    padding: 15%;
+    border-radius: 100%;
+    background: linear-gradient(to left, rgba(249, 207, 128, 0.452), rgba(243, 225, 151, 0.608));
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.46);
+}
+
+/*Our team*/
+
+.contain {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    min-height: 250px;
+}
+
+.slider {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 230px;
+    height: 230px;
+    animation: gallery 50s linear infinite;
+    cursor: pointer;
+}
+@keyframes gallery {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(860deg);
+    }
+}
+
+.span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotatey(calc(var(--i)* 68deg)) translatez(370px) scale(1.1);
+    -webkit-box-reflect: below 2.5px linear-gradient(transparent, rgba(3, 3, 3, 0, 2));
+}
+
+.image {
+    border-bottom: 2px solid black;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 30%;
+    border: 2px groove rgba(249, 214, 38, 0.022);
+    transition: 1.5s;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    transition-duration: 1s;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transition-delay: 20ms;
+    transition-property: all;
+    filter: blur(1.3px);
+    box-shadow:2px 2px 6px black;
+}
+
+.image:hover {
+    transform: rotatex(0deg);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.481);
+    filter: blur(0px);
+}
+
+
+
+
+/* media quary */
+
+@media (max-width: 768px) {
+    .span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotatey(calc(var(--i)* 68deg)) translatez(270px) scale(1.1);
+        -webkit-box-reflect: below 2.5px linear-gradient(transparent, rgba(3, 3, 3, 0, 2));
+    }
+}
+
+
+@media (min-width: 410px) and (max-width: 768px) {
+    .span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotatey(calc(var(--i)* 68deg)) translatez(150px) scale(1.1);
+        -webkit-box-reflect: below 2.5px linear-gradient(transparent, rgba(3, 3, 3, 0, 2));
+    }
+
+    .image {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: 1.5s;
+        width: 50%;
+        height: 50%;
+        transition-duration: 1s;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transition-delay: 20ms;
+        transition-property: all;
+
+    }
+}
+
+@media (max-width: 375px) {
+    .span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotatey(calc(var(--i)* 68deg)) translatez(105px) scale(1.1);
+        -webkit-box-reflect: below 2.5px linear-gradient(transparent, rgba(3, 3, 3, 0, 2));
+    }
+
+    .image {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: 1.5s;
+        width: 35%;
+        height: 35%;
+        transition-duration: 1s;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transition-delay: 20ms;
+        transition-property: all;
+    }
+}
